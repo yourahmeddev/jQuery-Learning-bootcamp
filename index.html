@@ -41,7 +41,7 @@
   // click
   // double click
   // $("button").dblclick(function(){
-      $("p").hide();
+      // $("p").hide();
   // })
 //   mouse enter event
 //   $("button").mouseenter(function () {
@@ -61,20 +61,20 @@
 // $(p).css("color","red")
 // });
 // on  method in js
-$("button").on({
-    mouseenter: function(){
-        console.log("Mouse Click event Fired", this)
-    },
-    mouseleave:function(){
-        console.log("Mouse Leave Event Fired" , this )
-    },
-    click:function(){
-        console.log("Click Event Fired" , this)
-        // $("p").hide(2000)
-        // $("p").show(2000)
-        $("p").toggle()
-    },
-})
+// $("button").on({
+//     mouseenter: function(){
+//         console.log("Mouse Click event Fired", this)
+//     },
+//     mouseleave:function(){
+//         console.log("Mouse Leave Event Fired" , this )
+//     },
+//     click:function(){
+//         console.log("Click Event Fired" , this)
+//         // $("p").hide(2000)
+//         // $("p").show(2000)
+//         $("p").toggle()
+//     },
+// })
   // mouse enter
   // mouse leave
   // keyboard event
@@ -89,7 +89,26 @@ $("button").on({
   // docuemnet / window events
   // load , resize, scroll, unload
 });
-
+// fade In function in js 
+$("button").on({
+  click:function(){
+    // $("p").fadeOut(5000 , function(){
+    //   console.log("Fade Out")
+    // })
+    // $("p").fadeToggle(1000, function(){
+    //   console.log("Fade Toggle")
+    // })
+    // $("p").fadeTo();
+    // slide up in jquery
+    // $("p").slideUp(1000);
+    // slide down in jQuery
+    // $("p").slideDown();
+    // slide toggle in jQuery 
+    // $("p").slideToggle(1000)
+    // animate function in jQuery
+    $("p").animate({opacity:0.3 , height:'400px'}, 2000)
+  }
+})
     </script>
   </body>
 </html>
