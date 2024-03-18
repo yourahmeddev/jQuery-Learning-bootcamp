@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery in one video</title>
+  </head>
+  <body>
+    <p>This is a 1 paragraph</p>
+    <p id="second">This is a 2 paragraph</p>
+    <p>This is a 3 paragraph</p>
+    <p class="fourth">This is a 4 paragraph</p>
+    <p>This is a 5 paragraph</p>
+    <p>This is a 6 paragraph</p>
+    <button id="double_click">Double Click button</button>
+    <!-- jquery in html -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <!-- <script src="./js/my.js"></script> -->
+    <script>
+        $(document).ready(function () {
+  // $("p").click(function () {
+  //   console.log("you clicked on p",this);
+  //   // $("#id").hide()
+  //   // $(".class").hide()
+  // });
+  // id selector in jquery
+  // $("#second").click(function(){
+  //     console.log(this)
+  // });
+  // class selector in jquery
+  // $(".fourth").click(function(){
+  //     console.log(this)
+  // });
+  // there are three main types of selector in jquery
+  // element selector
+  // id selector
+  // class selector
+  // Events in jquery
+  // Mouse events
+  // click
+  // double click
+  // $("button").dblclick(function(){
+      $("p").hide();
+  // })
+//   mouse enter event
+//   $("button").mouseenter(function () {
+//     $("p").css("color", "red");
+//   });
+//   mouse leave event
+//   $("button").mouseleave(function(){
+//     $('p').css("color","blue");
+//     $("p").css("background-color","white")
+//   });
+//   mouse down event
+// $("button").mousedown(function(){
+// $("p").css("background-color","#ff9e01")
+// });
+// mouse up event
+// $("button").mouseup(function(){
+// $(p).css("color","red")
+// });
+// on  method in js
+$("button").on({
+    mouseenter: function(){
+        console.log("Mouse Click event Fired", this)
+    },
+    mouseleave:function(){
+        console.log("Mouse Leave Event Fired" , this )
+    },
+    click:function(){
+        console.log("Click Event Fired" , this)
+        // $("p").hide(2000)
+        // $("p").show(2000)
+        $("p").toggle()
+    },
+})
+  // mouse enter
+  // mouse leave
+  // keyboard event
+  // keypress
+  // keydown
+  // key up
+  // form events
+  // submit
+  // focus
+  // blur
+  // change
+  // docuemnet / window events
+  // load , resize, scroll, unload
+});
+
+    </script>
+  </body>
+</html>
